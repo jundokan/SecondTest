@@ -8,6 +8,6 @@ namespace SecondTest.Service.NetWorking
 {
     interface IRestClient
     {
-        Task<string> GetAsync(string uri, string key);
+        Task<string> GetAsync(string uri);
     }
 }

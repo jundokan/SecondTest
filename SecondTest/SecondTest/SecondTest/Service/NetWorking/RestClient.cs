@@ -7,7 +7,7 @@ using System.Net.Http;
 
 namespace SecondTest.Service.NetWorking
 {
-    interface RestClient : IRestClient
+    class RestClient : IRestClient
     {
         public async Task<string> GetAsync(string uri)
         {
