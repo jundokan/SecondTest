@@ -5,8 +5,8 @@
     <StackLayout HorizontalOptions="CentreAndExpand"
                  VerticalOptions="CenterAndExpand" >
         <Label x:Name="nameUser" Text="UserName"/>
-        <Label x:Name="UserName" Text="Email"/>
-        <Batton x:Name="getButton" 
+        <Label x:Name="enail" Text="Email"/>
+        <Button x:Name="getButton" 
                 Text="Get User" 
                 Clicked="OnButtonClicked" />
     </StackLayout>
