@@ -8,11 +8,16 @@ using Xamarin.Forms;
 
 namespace SecondTest.View
 {
-    public partial class MainRendomUserPage : ContentPage
+    public partial class MainRandomUserPage : ContentPage
     {
-        public MainRendomUserPage()
+        public MainRandomUserPage()
         {
             InitializeComponent();
+        }
+
+        private void OnButtonClicked(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }

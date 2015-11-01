@@ -42,8 +42,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\NetWorking\IRestClient.cs" />
     <Compile Include="Service\NetWorking\RestClient.cs" />
-    <Compile Include="Service\RendomUserService\IRandomUserGetter.cs" />
-    <Compile Include="Service\RendomUserService\RandomUserGetter.cs" />
+    <Compile Include="Service\RandomUserService\IRandomUserGetter.cs" />
+    <Compile Include="Service\RandomUserService\RandomUserGetter.cs" />
     <Compile Include="View\MainRendomUserPage.xaml.cs">
       <DependentUpon>MainRendomUserPage.xaml</DependentUpon>
     </Compile>

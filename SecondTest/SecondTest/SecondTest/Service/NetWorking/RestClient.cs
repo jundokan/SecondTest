@@ -11,12 +11,14 @@ namespace SecondTest.Service.NetWorking
     {
         public async Task<string> GetAsync(string uri)
         {
-            var httpClient = new HttpClient();
-            httpClient.BaseAddress = new Uri(uri);
-            var responce = await httpClient.GetAsync(string.Format("{0}", uri));
-            responce.EnsureSuccessStatusCode();
-            var content = await responce.Content.ReadAsStringAsync();
-            return content;
+            using (var httpClient = new HttpClient())
+            {
+                httpClient.BaseAddress = new Uri(uri);
+                var responce = await httpClient.GetAsync($"{uri}");
+                responce.EnsureSuccessStatusCode();
+                var content = await responce.Content.ReadAsStringAsync();
+                return content;
+            }
         }
     }
 }
